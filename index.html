@@ -3,11 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>David's Car Wash</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>hi</h1>
+    <header>
+        <nav>
+            <div class="logo">David's Car Wash</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="home">
+            <h1>Welcome to David's Car Wash</h1>
+            <p>Some text here</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide top-notch car wash services to keep your car looking brand new.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Exterior Wash</h3>
+                <p>Complete exterior cleaning using high-quality products.</p>
+                <p>Price: $20</p>
+            </div>
+            <div class="service">
+                <h3>Interior Cleaning</h3>
+                <p>Thorough interior vacuuming and cleaning.</p>
+                <p>Price: $25</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="image1.jpg" alt="Car wash image 1">
+            <img src="image2.jpg" alt="Car wash image 2">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@moderncarwash.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Car Wash Lane, Clean City, CA</p>
+        <form action="/submit-contact" method="POST">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; David's Car Wash</p>
+    </footer>
 </body>
 </html>
